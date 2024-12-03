@@ -1,0 +1,62 @@
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  /* Style the links inside the navigation bar */
+  .topnav ul li a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0095ba;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.3s;
+  }
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #0095ba;
+  }
+  
+  .topnav ul li:hover::after{
+    width: 100%;
+  }
+  /* Add a color to the active/current link */
+  .topnav ul li a.active::after {
+    color: #0095ba;
+    width: 100%;
+  }
+
+  .topnav ul li a.icon {
+    display: none;
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  
+@media screen and (max-width: 606px){
+    .imgtopnav{
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .topnav ul li a{
+      font-size: 7px;
+    }
+    .containerfluid4{
+      width: 600px !important;
+    }
+}
+  

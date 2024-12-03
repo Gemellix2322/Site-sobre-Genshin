@@ -1,0 +1,133 @@
+.botão{
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #003054;
+    text-align: justify;
+}
+
+
+
+@font-face {
+    font-family: 'fonte1';
+    src: url(../Fontes/Genshin-Impact-Font/zh-cn.ttf);
+}
+
+.caixa {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.caixa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.conteudo h2 {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+
+.conteudo p {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+}
+
+.caixa:hover {
+    transform: scale(1.1);
+}
+
+.caixa:hover .conteudo {
+    transform: translateY(0);
+}
+
+body {
+    overflow-x: hidden; /* Oculta o overflow horizontal */
+    overflow-y: auto;  /* Permite rolagem vertical */
+  }
+  
+
+
+@media screen and (max-width: 605px){
+    .home{
+        width: 715px !important;
+    }
+    .containerfluid1{
+        height: auto !important;
+        width: 703px !important;
+    }
+    .row1{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .row2{
+        display: flow-root;
+    }
+    .tg{
+        height: auto;
+        font-size: 12px !important;
+    }
+    .col-sm-6-1{
+        padding-right: 10px;
+    }
+    .genshin5{
+        padding-top: 15px;
+    }
+    .imgs{
+        width: 80% !important;
+        height: 80% !important;
+        margin-left: 50px;
+    }
+    .meubotao{
+        margin: 0 !important;
+    }
+    .row5{
+        display: inline-flex !important;
+    }
+    .mecanicas{
+        width: 703px !important;
+    }
+    .manga{
+        width: 703px !important;
+    }
+    .noticias{
+        width: 703px !important;
+    }
+    .fanarts{
+        width: 703px !important;
+    }
+    .contato{
+        width: 703px !important;
+    }
+    .footer{
+        width: 703px !important;
+    }
+    .imgnoticia{
+        padding-left: 115px;
+    }
+    .imgfanart{
+        width: 160px !important;
+        height: 120px !important;
+    }
+    .imgsfanart{
+        width: 150px !important;
+        height: auto !important;
+    }
+}
